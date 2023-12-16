@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://k5y5sxdr8kwy"
+path="res://.godot/imported/skull_candle.obj-57e58e05d68e40c492a069147f927e62.mesh"
+
+[deps]
+
+files=["res://.godot/imported/skull_candle.obj-57e58e05d68e40c492a069147f927e62.mesh"]
+
+source_file="res://assets/models/KayKit_HalloweenBits_1.0_FREE/Assets/obj/skull_candle.obj"
+dest_files=["res://.godot/imported/skull_candle.obj-57e58e05d68e40c492a069147f927e62.mesh", "res://.godot/imported/skull_candle.obj-57e58e05d68e40c492a069147f927e62.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

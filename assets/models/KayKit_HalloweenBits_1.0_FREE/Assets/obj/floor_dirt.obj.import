@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b75mu4pq4bny0"
+path="res://.godot/imported/floor_dirt.obj-2487f1b12c37a5c98d406d39d60ba8df.mesh"
+
+[deps]
+
+files=["res://.godot/imported/floor_dirt.obj-2487f1b12c37a5c98d406d39d60ba8df.mesh"]
+
+source_file="res://assets/models/KayKit_HalloweenBits_1.0_FREE/Assets/obj/floor_dirt.obj"
+dest_files=["res://.godot/imported/floor_dirt.obj-2487f1b12c37a5c98d406d39d60ba8df.mesh", "res://.godot/imported/floor_dirt.obj-2487f1b12c37a5c98d406d39d60ba8df.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

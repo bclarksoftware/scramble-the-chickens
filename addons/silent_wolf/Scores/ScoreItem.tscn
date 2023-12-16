@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://2wy4d8d5av0l"]
+
+[ext_resource type="FontFile" uid="uid://bgcaqkvp1sju0" path="res://assets/fonts/PublicPixel-z84yD.ttf" id="1_mgxn0"]
+
+[sub_resource type="Theme" id="Theme_r64iw"]
+default_font = ExtResource("1_mgxn0")
+default_font_size = 24
+
+[node name="ScoreItem" type="Panel"]
+custom_minimum_size = Vector2(500, 50)
+grow_horizontal = 0
+grow_vertical = 0
+theme = SubResource("Theme_r64iw")
+
+[node name="PlayerName" type="Label" parent="."]
+custom_minimum_size = Vector2(100, 25)
+layout_mode = 0
+offset_left = 8.0
+offset_right = 359.0
+offset_bottom = 50.0
+text = "1. Godzilla"
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 1.0
+offset_right = 485.0
+offset_bottom = 49.0
+text = "13"
+horizontal_alignment = 2
+vertical_alignment = 1

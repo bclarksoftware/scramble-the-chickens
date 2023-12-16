@@ -1,0 +1,13 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://ci2u0yh2bui3w"]
+
+[ext_resource type="AudioStream" uid="uid://c80jg2qyute57" path="res://assets/sounds/Chicken Chop Game Audio/Cat/Cat_Walk1.wav" id="1_a2u2a"]
+[ext_resource type="AudioStream" uid="uid://5vs8uypv4gjb" path="res://assets/sounds/Chicken Chop Game Audio/Cat/Cat_Walk2.wav" id="2_m5x1w"]
+
+[resource]
+streams_count = 2
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("1_a2u2a")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("2_m5x1w")
+stream_1/weight = 1.0

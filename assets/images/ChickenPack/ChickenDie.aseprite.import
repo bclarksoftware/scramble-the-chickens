@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://d3iycjyb7k5ta"
+path="res://.godot/imported/ChickenDie.aseprite-ad8326592156e761c2f620e18256da8a.res"
+
+[deps]
+
+source_file="res://assets/images/ChickenPack/ChickenDie.aseprite"
+dest_files=["res://.godot/imported/ChickenDie.aseprite-ad8326592156e761c2f620e18256da8a.res"]
+
+[params]
+

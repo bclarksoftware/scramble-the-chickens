@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cr2k0la63mf1h"
+path="res://.godot/imported/fence.obj-001fd418dc5de2017acca8f9ad735b42.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence.obj-001fd418dc5de2017acca8f9ad735b42.mesh"]
+
+source_file="res://assets/models/KayKit_HalloweenBits_1.0_FREE/Assets/obj/fence.obj"
+dest_files=["res://.godot/imported/fence.obj-001fd418dc5de2017acca8f9ad735b42.mesh", "res://.godot/imported/fence.obj-001fd418dc5de2017acca8f9ad735b42.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

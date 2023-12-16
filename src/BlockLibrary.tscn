@@ -1,0 +1,356 @@
+[gd_scene load_steps=52 format=3 uid="uid://bm4y1o1e7xlmo"]
+
+[ext_resource type="Texture2D" uid="uid://broxljyouuu54" path="res://assets/models/blocks/textures/ground.png" id="1_ahgq0"]
+[ext_resource type="ArrayMesh" uid="uid://dijf5i2yybgke" path="res://assets/models/blocks/obj/ground.obj" id="2_w83p8"]
+[ext_resource type="Texture2D" uid="uid://bobprrr0wa1v8" path="res://assets/models/blocks/textures/groundCheckered.png" id="3_bu0c0"]
+[ext_resource type="Texture2D" uid="uid://bhd78p64nnw4l" path="res://assets/models/blocks/textures/groundEarth.png" id="4_dm6q7"]
+[ext_resource type="Texture2D" uid="uid://cxgim0fqpsiu6" path="res://assets/models/blocks/textures/groundEarthCheckered.png" id="5_ppams"]
+[ext_resource type="Texture2D" uid="uid://coba1g78psmo3" path="res://assets/models/blocks/textures/groundMud.png" id="6_6ypf7"]
+[ext_resource type="Texture2D" uid="uid://dpeis3jl5uktv" path="res://assets/models/blocks/textures/groundSnow.png" id="7_jki5n"]
+[ext_resource type="Texture2D" uid="uid://5wwlg8biybpa" path="res://assets/models/blocks/textures/ice01.png" id="8_fn5pl"]
+[ext_resource type="Texture2D" uid="uid://dpq2k5cgdjx6e" path="res://assets/models/blocks/textures/lava01.png" id="9_msfxt"]
+[ext_resource type="Texture2D" uid="uid://c3i6hp877uqfy" path="res://assets/models/blocks/textures/snow.png" id="10_5ee71"]
+[ext_resource type="Texture2D" uid="uid://buqrhilwlxtp7" path="res://assets/models/blocks/textures/Stone01.png" id="11_qggx8"]
+[ext_resource type="Texture2D" uid="uid://cajg4qhvlhmhs" path="res://assets/models/blocks/textures/Stone02.png" id="12_74q51"]
+[ext_resource type="Texture2D" uid="uid://bin2icdjstxck" path="res://assets/models/blocks/textures/Stone03.png" id="13_icakl"]
+[ext_resource type="Texture2D" uid="uid://cx6uw46s2he6y" path="res://assets/models/blocks/textures/stone04.png" id="14_f6hvv"]
+[ext_resource type="Texture2D" uid="uid://07nbsm26pahe" path="res://assets/models/blocks/textures/stone05.png" id="15_3jfr5"]
+[ext_resource type="Texture2D" uid="uid://btnddqq72w6ri" path="res://assets/models/blocks/textures/stone06.png" id="16_wbv41"]
+[ext_resource type="Texture2D" uid="uid://dcy55u134rp3" path="res://assets/models/blocks/textures/stone07.png" id="17_yu1i8"]
+[ext_resource type="Texture2D" uid="uid://chtb4bq6qwpqb" path="res://assets/models/blocks/textures/wallBrick01.png" id="18_d7r0p"]
+[ext_resource type="Texture2D" uid="uid://diumd1kde6hr6" path="res://assets/models/blocks/textures/wallBrick02.png" id="19_x7m3g"]
+[ext_resource type="Texture2D" uid="uid://oh8drdbpbenm" path="res://assets/models/blocks/textures/wallBrick03.png" id="20_m63m6"]
+[ext_resource type="Texture2D" uid="uid://dygpw00wusede" path="res://assets/models/blocks/textures/wallBrick04.png" id="21_ljx3b"]
+[ext_resource type="Texture2D" uid="uid://llcqv0pwcfnr" path="res://assets/models/blocks/textures/wallBrick05.png" id="22_nob8d"]
+[ext_resource type="Texture2D" uid="uid://c5v0yt5kcxgvi" path="res://assets/models/blocks/textures/wallBrick06.png" id="23_4jxsv"]
+[ext_resource type="Texture2D" uid="uid://qkrkq0lk5mar" path="res://assets/models/blocks/textures/wallStone.png" id="24_pibl4"]
+[ext_resource type="Texture2D" uid="uid://dymrm4ic0fqgg" path="res://assets/models/blocks/textures/water.png" id="25_f8du4"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_futi7"]
+_surfaces = [{
+"aabb": AABB(-50, -50, -50, 100, 100, 100),
+"attribute_data": PackedByteArray(126, 0, 26, 63, 197, 255, 25, 63, 80, 1, 160, 62, 159, 0, 26, 63, 122, 255, 159, 62, 180, 1, 160, 62, 143, 0, 26, 63, 180, 1, 160, 62, 151, 254, 101, 63, 122, 253, 25, 63, 185, 254, 101, 63, 150, 4, 160, 62, 104, 5, 34, 63, 3, 5, 38, 63, 178, 244, 109, 63, 169, 21, 38, 63, 235, 254, 109, 63, 22, 247, 111, 63, 70, 9, 34, 63, 22, 247, 111, 63, 209, 60, 128, 60, 118, 254, 25, 63, 28, 67, 128, 60, 104, 3, 160, 62, 80, 1, 160, 62, 159, 0, 26, 63, 221, 7, 160, 62, 105, 138, 128, 60, 252, 254, 25, 63, 252, 85, 128, 60, 143, 0, 26, 63, 180, 1, 160, 62, 126, 0, 26, 63, 164, 255, 101, 63, 201, 0, 160, 62, 164, 255, 101, 63),
+"format": 4119,
+"index_count": 36,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 3, 0, 0, 0, 2, 0, 4, 0, 0, 0, 3, 0, 5, 0, 4, 0, 3, 0, 6, 0, 7, 0, 8, 0, 9, 0, 6, 0, 8, 0, 1, 0, 10, 0, 11, 0, 2, 0, 12, 0, 11, 0, 3, 0, 13, 0, 14, 0, 13, 0, 15, 0, 2, 0, 16, 0, 1, 0, 0, 0, 1, 0, 16, 0, 17, 0),
+"primitive": 3,
+"vertex_count": 18,
+"vertex_data": PackedByteArray(0, 0, 72, 66, 0, 0, 72, 66, 0, 0, 72, 66, 255, 127, 255, 255, 84, 213, 255, 191, 0, 0, 72, 194, 0, 0, 72, 66, 0, 0, 72, 66, 255, 127, 255, 255, 255, 255, 84, 213, 0, 0, 72, 194, 0, 0, 72, 66, 0, 0, 72, 194, 255, 127, 255, 255, 84, 213, 255, 191, 0, 0, 72, 66, 0, 0, 72, 66, 0, 0, 72, 194, 255, 127, 255, 255, 255, 255, 84, 213, 0, 0, 72, 66, 0, 0, 72, 194, 0, 0, 72, 66, 255, 127, 255, 255, 255, 127, 255, 191, 0, 0, 72, 66, 0, 0, 72, 194, 0, 0, 72, 194, 255, 127, 255, 255, 255, 255, 255, 255, 0, 0, 72, 194, 0, 0, 72, 194, 0, 0, 72, 66, 255, 255, 255, 127, 255, 127, 255, 191, 0, 0, 72, 66, 0, 0, 72, 194, 0, 0, 72, 66, 255, 127, 255, 255, 226, 255, 255, 63, 0, 0, 72, 66, 0, 0, 72, 194, 0, 0, 72, 194, 255, 127, 255, 255, 240, 255, 255, 63, 0, 0, 72, 194, 0, 0, 72, 194, 0, 0, 72, 194, 255, 255, 255, 127, 0, 0, 0, 128, 0, 0, 72, 194, 0, 0, 72, 194, 0, 0, 72, 66, 255, 255, 255, 127, 3, 128, 0, 0, 0, 0, 72, 194, 0, 0, 72, 194, 0, 0, 72, 194, 255, 255, 255, 127, 0, 128, 0, 0, 0, 0, 72, 194, 0, 0, 72, 66, 0, 0, 72, 66, 255, 127, 255, 255, 254, 255, 255, 191, 0, 0, 72, 194, 0, 0, 72, 194, 0, 0, 72, 194, 255, 255, 255, 127, 255, 127, 255, 255, 0, 0, 72, 66, 0, 0, 72, 194, 0, 0, 72, 194, 255, 127, 255, 255, 255, 255, 255, 191, 0, 0, 72, 66, 0, 0, 72, 66, 0, 0, 72, 194, 255, 127, 255, 255, 255, 255, 255, 223, 0, 0, 72, 66, 0, 0, 72, 194, 0, 0, 72, 66, 255, 127, 255, 255, 255, 255, 255, 191, 0, 0, 72, 194, 0, 0, 72, 194, 0, 0, 72, 66, 255, 255, 255, 127, 0, 0, 0, 128)
+}]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sb754"]
+albedo_texture = ExtResource("1_ahgq0")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d8tqk"]
+size = Vector3(99.8589, 100.123, 99.8361)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wxnop"]
+albedo_texture = ExtResource("3_bu0c0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_26n1n"]
+albedo_texture = ExtResource("4_dm6q7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_msvy1"]
+albedo_texture = ExtResource("5_ppams")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ou7pe"]
+albedo_texture = ExtResource("6_6ypf7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2onrf"]
+albedo_texture = ExtResource("7_jki5n")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l6pfx"]
+albedo_texture = ExtResource("8_fn5pl")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nf7s4"]
+albedo_texture = ExtResource("9_msfxt")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wicdn"]
+albedo_texture = ExtResource("10_5ee71")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8fvt5"]
+albedo_texture = ExtResource("11_qggx8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ea3hw"]
+albedo_texture = ExtResource("12_74q51")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_avesa"]
+albedo_texture = ExtResource("13_icakl")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ftctw"]
+albedo_texture = ExtResource("14_f6hvv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qxuh7"]
+albedo_texture = ExtResource("15_3jfr5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_leaqy"]
+albedo_texture = ExtResource("16_wbv41")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c812p"]
+albedo_texture = ExtResource("17_yu1i8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wuyk1"]
+albedo_texture = ExtResource("18_d7r0p")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kh23x"]
+albedo_texture = ExtResource("19_x7m3g")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yxgx0"]
+albedo_texture = ExtResource("20_m63m6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mfl42"]
+albedo_texture = ExtResource("21_ljx3b")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vdfdw"]
+albedo_texture = ExtResource("22_nob8d")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8q1br"]
+albedo_texture = ExtResource("23_4jxsv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_apts4"]
+albedo_texture = ExtResource("24_pibl4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ygpxa"]
+albedo_texture = ExtResource("25_f8du4")
+
+[node name="Scene Root" type="Node"]
+
+[node name="Ground" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = SubResource("ArrayMesh_futi7")
+surface_material_override/0 = SubResource("StandardMaterial3D_sb754")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Ground"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="GroundCheckered" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_wxnop")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundCheckered"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundCheckered/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="GroundEarth" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_26n1n")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundEarth"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundEarth/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="GroundEarthCheckered" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_msvy1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundEarthCheckered"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundEarthCheckered/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="GroundMud" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_ou7pe")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundMud"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundMud/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="GroundSnow" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_2onrf")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundSnow"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundSnow/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="Ice" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_l6pfx")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Ice"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ice/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="Lava" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_nf7s4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lava"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lava/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="Snow" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_wicdn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Snow"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Snow/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="Stone01" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_8fvt5")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stone01"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stone01/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="Stone02" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_ea3hw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stone02"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stone02/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="Stone03" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_avesa")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stone03"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stone03/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="Stone04" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_ftctw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stone04"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stone04/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="Stone05" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_qxuh7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stone05"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stone05/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="Stone06" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_leaqy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stone06"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stone06/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="Stone07" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_c812p")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stone07"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stone07/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="WallBrick01" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_wuyk1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="WallBrick01"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallBrick01/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="WallBrick02" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_kh23x")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="WallBrick02"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallBrick02/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="WallBrick03" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_yxgx0")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="WallBrick03"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallBrick03/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="WallBrick04" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_mfl42")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="WallBrick04"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallBrick04/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="WallBrick05" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_vdfdw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="WallBrick05"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallBrick05/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="WallBrick06" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_8q1br")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="WallBrick06"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallBrick06/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="WallStone" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_apts4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="WallStone"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallStone/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")
+
+[node name="Water" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("2_w83p8")
+surface_material_override/0 = SubResource("StandardMaterial3D_ygpxa")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Water"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Water/StaticBody3D"]
+shape = SubResource("BoxShape3D_d8tqk")

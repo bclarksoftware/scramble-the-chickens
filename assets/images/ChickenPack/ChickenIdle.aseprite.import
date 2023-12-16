@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://cihuwjed2umew"
+path="res://.godot/imported/ChickenIdle.aseprite-2a743be6ade17113668123b2e77b0598.res"
+
+[deps]
+
+source_file="res://assets/images/ChickenPack/ChickenIdle.aseprite"
+dest_files=["res://.godot/imported/ChickenIdle.aseprite-2a743be6ade17113668123b2e77b0598.res"]
+
+[params]
+

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bvupq0k2sthgx"
+path="res://.godot/imported/gravestone.obj-a480d6cc23641cc16125edffde89561a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/gravestone.obj-a480d6cc23641cc16125edffde89561a.mesh"]
+
+source_file="res://assets/models/KayKit_HalloweenBits_1.0_FREE/Assets/obj/gravestone.obj"
+dest_files=["res://.godot/imported/gravestone.obj-a480d6cc23641cc16125edffde89561a.mesh", "res://.godot/imported/gravestone.obj-a480d6cc23641cc16125edffde89561a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bq4dbkyyxk0l4"
+path="res://.godot/imported/arch.obj-b61f6de7664e4869e5d0031726236735.mesh"
+
+[deps]
+
+files=["res://.godot/imported/arch.obj-b61f6de7664e4869e5d0031726236735.mesh"]
+
+source_file="res://assets/models/KayKit_HalloweenBits_1.0_FREE/Assets/obj/arch.obj"
+dest_files=["res://.godot/imported/arch.obj-b61f6de7664e4869e5d0031726236735.mesh", "res://.godot/imported/arch.obj-b61f6de7664e4869e5d0031726236735.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

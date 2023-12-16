@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bnj5vntwlvuor"
+path="res://.godot/imported/pillar.obj-6094c81b15874d871bed19f5507c2192.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pillar.obj-6094c81b15874d871bed19f5507c2192.mesh"]
+
+source_file="res://assets/models/KayKit_HalloweenBits_1.0_FREE/Assets/obj/pillar.obj"
+dest_files=["res://.godot/imported/pillar.obj-6094c81b15874d871bed19f5507c2192.mesh", "res://.godot/imported/pillar.obj-6094c81b15874d871bed19f5507c2192.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

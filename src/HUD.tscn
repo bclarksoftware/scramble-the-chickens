@@ -1,0 +1,266 @@
+[gd_scene load_steps=15 format=3 uid="uid://meewmfwqrcwh"]
+
+[ext_resource type="Script" path="res://src/HUD.gd" id="1_a3b31"]
+[ext_resource type="FontFile" uid="uid://caxjgva6xw0pb" path="res://assets/fonts/ARCADECLASSIC.TTF" id="2_2vo54"]
+[ext_resource type="Texture2D" uid="uid://dcideh4bks2j6" path="res://assets/images/heart_64x64.png" id="3_d3q8f"]
+[ext_resource type="Texture2D" uid="uid://dix60qcmyqone" path="res://assets/images/chicken1.png" id="4_1ajyi"]
+[ext_resource type="FontFile" uid="uid://ccm01vmb315cu" path="res://assets/fonts/GalacticaGrid.ttf" id="5_q32mh"]
+[ext_resource type="FontFile" uid="uid://bgcaqkvp1sju0" path="res://assets/fonts/PublicPixel-z84yD.ttf" id="6_sl6nx"]
+[ext_resource type="PackedScene" uid="uid://dldimb2c4ddjn" path="res://src/Leaderboard.tscn" id="7_tdpff"]
+[ext_resource type="Script" path="res://src/SubmitHighScoreCenterContainer.gd" id="8_luf25"]
+[ext_resource type="PackedScene" uid="uid://cfaifvqu1irmp" path="res://src/Options.tscn" id="9_cjj16"]
+[ext_resource type="Shader" path="res://src/Rain.gdshader" id="10_73r4m"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v1jmb"]
+shader = ExtResource("10_73r4m")
+shader_parameter/count = 100
+shader_parameter/slant = -0.1
+shader_parameter/speed = 34.831
+shader_parameter/timeScale = 1.0
+shader_parameter/blur = 0.002
+shader_parameter/colour = Color(1, 1, 1, 1)
+shader_parameter/size = Vector2(0.005, 0.2)
+
+[sub_resource type="Theme" id="Theme_ws1t5"]
+default_font = ExtResource("6_sl6nx")
+default_font_size = 32
+
+[sub_resource type="Theme" id="Theme_jirsu"]
+default_font = ExtResource("6_sl6nx")
+default_font_size = 0
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2iavm"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_a3b31")
+
+[node name="Rain" type="ColorRect" parent="."]
+process_mode = 1
+show_behind_parent = true
+material = SubResource("ShaderMaterial_v1jmb")
+offset_right = 1918.0
+offset_bottom = 658.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="HealthLabel" type="Label" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 73.0
+offset_top = -66.0
+offset_right = 238.0
+offset_bottom = 39.0
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("2_2vo54")
+theme_override_font_sizes/font_size = 100
+text = "100"
+vertical_alignment = 1
+
+[node name="HealthTexture" type="TextureRect" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 27.0
+offset_top = -54.0
+offset_right = 91.0
+offset_bottom = 10.0
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_d3q8f")
+
+[node name="ScoreLabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -162.0
+offset_top = 19.0
+offset_right = 3.0
+offset_bottom = 124.0
+grow_horizontal = 0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("2_2vo54")
+theme_override_font_sizes/font_size = 100
+text = "000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreTexture" type="TextureRect" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -71.0
+offset_top = 16.0
+offset_right = 29.0
+offset_bottom = 116.0
+grow_horizontal = 0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_1ajyi")
+
+[node name="Message" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -244.0
+offset_right = 20.0
+offset_bottom = -142.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_q32mh")
+theme_override_font_sizes/font_size = 72
+text = "Scramble  the  Chickens!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonCenterContainer" type="CenterContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = 60.0
+offset_right = 200.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ButtonGridContainer" type="GridContainer" parent="ButtonCenterContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="StartButton" type="Button" parent="ButtonCenterContainer/ButtonGridContainer"]
+custom_minimum_size = Vector2(190, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("6_sl6nx")
+theme_override_font_sizes/font_size = 32
+text = "Start
+"
+icon_alignment = 1
+text_direction = 3
+
+[node name="Leaderboard" type="Button" parent="ButtonCenterContainer/ButtonGridContainer"]
+custom_minimum_size = Vector2(375, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("6_sl6nx")
+theme_override_font_sizes/font_size = 32
+text = "Leaderboard
+"
+
+[node name="Options" type="Button" parent="ButtonCenterContainer/ButtonGridContainer"]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = SubResource("Theme_ws1t5")
+text = "Options"
+icon_alignment = 1
+
+[node name="QuitButton" type="Button" parent="ButtonCenterContainer/ButtonGridContainer"]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("6_sl6nx")
+theme_override_font_sizes/font_size = 32
+text = "Quit"
+
+[node name="MessageTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="Leaderboard" parent="." instance=ExtResource("7_tdpff")]
+visible = false
+
+[node name="SubmitHighScoreCenterContainer" type="CenterContainer" parent="."]
+visible = false
+custom_minimum_size = Vector2(0, 150)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -116.0
+offset_top = -20.0
+offset_right = 116.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_jirsu")
+script = ExtResource("8_luf25")
+
+[node name="SubmitHighScoreGridContainer" type="GridContainer" parent="SubmitHighScoreCenterContainer"]
+custom_minimum_size = Vector2(0, 175)
+layout_mode = 2
+columns = 4
+
+[node name="PlaceHeader" type="Label" parent="SubmitHighScoreCenterContainer/SubmitHighScoreGridContainer"]
+material = SubResource("CanvasItemMaterial_2iavm")
+layout_mode = 2
+text = "Place"
+
+[node name="NameHeader" type="Label" parent="SubmitHighScoreCenterContainer/SubmitHighScoreGridContainer"]
+custom_minimum_size = Vector2(225, 0)
+layout_mode = 2
+text = "Name"
+horizontal_alignment = 1
+
+[node name="ScoreHeader" type="Label" parent="SubmitHighScoreCenterContainer/SubmitHighScoreGridContainer"]
+layout_mode = 2
+text = "Score"
+
+[node name="SubmitHeader" type="Label" parent="SubmitHighScoreCenterContainer/SubmitHighScoreGridContainer"]
+layout_mode = 2
+
+[node name="PlaceValue" type="Label" parent="SubmitHighScoreCenterContainer/SubmitHighScoreGridContainer"]
+custom_minimum_size = Vector2(50, 35)
+layout_mode = 2
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NameValue" type="LineEdit" parent="SubmitHighScoreCenterContainer/SubmitHighScoreGridContainer"]
+custom_minimum_size = Vector2(200, 35)
+layout_mode = 2
+size_flags_horizontal = 4
+placeholder_text = "<Enter Name>"
+alignment = 1
+max_length = 12
+caret_blink = true
+
+[node name="ScoreValue" type="Label" parent="SubmitHighScoreCenterContainer/SubmitHighScoreGridContainer"]
+layout_mode = 2
+text = "999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Submit" type="Button" parent="SubmitHighScoreCenterContainer"]
+custom_minimum_size = Vector2(300, 40)
+layout_mode = 2
+disabled = true
+text = "Submit"
+
+[node name="Options" parent="." instance=ExtResource("9_cjj16")]
+visible = false
+
+[connection signal="pressed" from="ButtonCenterContainer/ButtonGridContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="ButtonCenterContainer/ButtonGridContainer/Leaderboard" to="." method="_on_leaderboard_pressed"]
+[connection signal="pressed" from="ButtonCenterContainer/ButtonGridContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="ButtonCenterContainer/ButtonGridContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="timeout" from="MessageTimer" to="." method="_on_message_timer_timeout"]
+[connection signal="visibility_changed" from="Leaderboard" to="." method="_on_leaderboard_visibility_changed"]
+[connection signal="text_changed" from="SubmitHighScoreCenterContainer/SubmitHighScoreGridContainer/NameValue" to="SubmitHighScoreCenterContainer" method="_on_name_value_text_changed"]
+[connection signal="text_submitted" from="SubmitHighScoreCenterContainer/SubmitHighScoreGridContainer/NameValue" to="SubmitHighScoreCenterContainer" method="_on_name_value_text_submitted"]
+[connection signal="pressed" from="SubmitHighScoreCenterContainer/Submit" to="." method="_on_submit_high_score_pressed"]
+[connection signal="visibility_changed" from="Options" to="." method="_on_options_visibility_changed"]

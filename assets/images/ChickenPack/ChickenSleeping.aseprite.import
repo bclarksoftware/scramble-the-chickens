@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://d2qfa4vix86uh"
+path="res://.godot/imported/ChickenSleeping.aseprite-f91a0a906b5a5cbdd37b05913c08e0aa.res"
+
+[deps]
+
+source_file="res://assets/images/ChickenPack/ChickenSleeping.aseprite"
+dest_files=["res://.godot/imported/ChickenSleeping.aseprite-f91a0a906b5a5cbdd37b05913c08e0aa.res"]
+
+[params]
+

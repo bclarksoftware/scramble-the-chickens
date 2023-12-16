@@ -1,0 +1,52 @@
+[gd_resource type="MultiMesh" load_steps=7 format=3 uid="uid://burs8c7ogdy00"]
+
+[ext_resource type="Shader" path="res://src/Grass.gdshader" id="1_jly3k"]
+[ext_resource type="Texture2D" uid="uid://bo5tc41etn8p7" path="res://assets/models/retro_nature_pack/textures/grass/grass_bush_spring.png" id="2_efu6e"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ratxa"]
+noise_type = 3
+frequency = 0.0001
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ifsmt"]
+width = 256
+height = 256
+in_3d_space = true
+generate_mipmaps = false
+seamless = true
+seamless_blend_skirt = 0.631
+noise = SubResource("FastNoiseLite_ratxa")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_01csq"]
+render_priority = 0
+shader = ExtResource("1_jly3k")
+shader_parameter/sway = 0.1
+shader_parameter/sway_ = 0.1
+shader_parameter/sway_pow = 0.1
+shader_parameter/grass_roughness = 0.1
+shader_parameter/sway_noise_sampeling_scale = 1.0
+shader_parameter/sway_time_scale = 1.0
+shader_parameter/sway_dir = Vector3(1, 0, 1)
+shader_parameter/color_scale = 0.3
+shader_parameter/color_grad_height = 2.67
+shader_parameter/top_color = Color(0, 1, 0, 0)
+shader_parameter/bot_color = Color(0.0352941, 0.34902, 0, 0)
+shader_parameter/grass_scale = Vector3(1, 1, 1)
+shader_parameter/tex = ExtResource("2_efu6e")
+shader_parameter/sway_noise = SubResource("NoiseTexture2D_ifsmt")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_eee5f"]
+_surfaces = [{
+"aabb": AABB(-0.205, 0, -0.202, 0.405, 0.50001, 0.404),
+"attribute_data": PackedByteArray(236, 81, 184, 60, 0, 0, 0, 0, 102, 102, 102, 62, 0, 0, 128, 62, 236, 81, 184, 60, 0, 0, 128, 62, 102, 102, 102, 62, 0, 0, 128, 62, 236, 81, 184, 60, 0, 0, 0, 0, 236, 81, 184, 60, 0, 0, 128, 62, 236, 81, 184, 60, 0, 0, 0, 0, 102, 102, 102, 62, 0, 0, 128, 62, 236, 81, 184, 60, 0, 0, 128, 62, 102, 102, 102, 62, 0, 0, 128, 62, 236, 81, 184, 60, 0, 0, 0, 0, 236, 81, 184, 60, 0, 0, 128, 62, 102, 102, 102, 62, 0, 0, 0, 0, 102, 102, 102, 62, 0, 0, 0, 0, 102, 102, 102, 62, 0, 0, 0, 0, 102, 102, 102, 62, 0, 0, 0, 0),
+"format": 4119,
+"index_count": 24,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 11, 0, 12, 0, 1, 0, 0, 0, 13, 0, 4, 0, 3, 0, 14, 0, 7, 0, 6, 0, 15, 0, 10, 0, 9, 0),
+"material": SubResource("ShaderMaterial_01csq"),
+"primitive": 3,
+"vertex_count": 16,
+"vertex_data": PackedByteArray(133, 235, 81, 190, 0, 0, 0, 63, 0, 0, 0, 0, 255, 127, 130, 130, 255, 255, 255, 191, 205, 204, 76, 62, 0, 0, 0, 0, 10, 215, 35, 60, 255, 127, 130, 130, 255, 255, 255, 191, 133, 235, 81, 190, 0, 0, 0, 0, 10, 215, 35, 60, 255, 127, 130, 130, 255, 255, 255, 191, 205, 204, 76, 62, 0, 0, 0, 0, 10, 215, 35, 188, 124, 253, 255, 255, 255, 255, 255, 63, 133, 235, 81, 190, 0, 0, 0, 63, 0, 0, 0, 0, 124, 253, 255, 255, 255, 255, 255, 63, 133, 235, 81, 190, 0, 0, 0, 0, 10, 215, 35, 188, 124, 253, 255, 255, 255, 255, 255, 63, 0, 0, 0, 0, 0, 0, 0, 63, 23, 217, 78, 190, 130, 2, 130, 130, 255, 127, 255, 191, 10, 215, 35, 188, 0, 0, 0, 0, 23, 217, 78, 62, 130, 2, 130, 130, 255, 127, 255, 191, 10, 215, 35, 188, 0, 0, 0, 0, 23, 217, 78, 190, 130, 2, 130, 130, 255, 127, 255, 191, 10, 215, 35, 60, 0, 0, 0, 0, 23, 217, 78, 62, 124, 253, 130, 130, 255, 127, 255, 63, 0, 0, 0, 0, 0, 0, 0, 63, 23, 217, 78, 190, 124, 253, 130, 130, 255, 127, 255, 63, 10, 215, 35, 60, 0, 0, 0, 0, 23, 217, 78, 190, 124, 253, 130, 130, 255, 127, 255, 63, 205, 204, 76, 62, 0, 0, 0, 63, 0, 0, 0, 0, 255, 127, 130, 130, 255, 255, 255, 191, 205, 204, 76, 62, 0, 0, 0, 63, 0, 0, 0, 0, 124, 253, 255, 255, 255, 255, 255, 63, 0, 0, 0, 0, 0, 0, 0, 63, 23, 217, 78, 62, 130, 2, 130, 130, 255, 127, 255, 191, 0, 0, 0, 0, 0, 0, 0, 63, 23, 217, 78, 62, 124, 253, 130, 130, 255, 127, 255, 63)
+}]
+
+[resource]
+transform_format = 1
+mesh = SubResource("ArrayMesh_eee5f")

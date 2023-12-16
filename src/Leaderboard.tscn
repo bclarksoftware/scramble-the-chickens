@@ -1,0 +1,78 @@
+[gd_scene load_steps=7 format=3 uid="uid://dldimb2c4ddjn"]
+
+[ext_resource type="Script" path="res://src/Leaderboard.gd" id="1_2654d"]
+[ext_resource type="FontFile" uid="uid://bgcaqkvp1sju0" path="res://assets/fonts/PublicPixel-z84yD.ttf" id="2_jqdui"]
+[ext_resource type="PackedScene" uid="uid://clllbf6am8qdf" path="res://addons/silent_wolf/common/SWButton.tscn" id="3_iixja"]
+
+[sub_resource type="Theme" id="Theme_wckpn"]
+default_font = ExtResource("2_jqdui")
+default_font_size = 0
+
+[sub_resource type="Theme" id="2"]
+default_font_size = 11
+
+[sub_resource type="Theme" id="Theme_tdqlt"]
+default_font = ExtResource("2_jqdui")
+default_font_size = 7
+
+[node name="Leaderboard" type="CanvasLayer"]
+script = ExtResource("1_2654d")
+
+[node name="Board" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -270.0
+offset_top = -318.0
+offset_right = 522.0
+offset_bottom = 533.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.75, 0.75)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = SubResource("Theme_wckpn")
+theme_override_constants/separation = 48
+
+[node name="TitleContainer" type="CenterContainer" parent="Board"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Board/TitleContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "Leaderboard"
+
+[node name="MessageContainer" type="CenterContainer" parent="Board"]
+visible = false
+layout_mode = 2
+
+[node name="TextMessage" type="Label" parent="Board/MessageContainer"]
+layout_mode = 2
+text = "Loading scores..."
+
+[node name="HighScores" type="CenterContainer" parent="Board"]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+theme = SubResource("2")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Board/HighScores"]
+custom_minimum_size = Vector2(600, 600)
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="ScoreItemContainer" type="VBoxContainer" parent="Board/HighScores/ScrollContainer"]
+custom_minimum_size = Vector2(600, 600)
+layout_mode = 2
+theme = SubResource("Theme_tdqlt")
+
+[node name="CloseButtonContainer" type="CenterContainer" parent="Board"]
+layout_mode = 2
+
+[node name="CloseButton" parent="Board/CloseButtonContainer" instance=ExtResource("3_iixja")]
+custom_minimum_size = Vector2(600, 80)
+layout_mode = 2
+text = "Close Leaderboard"
+
+[connection signal="pressed" from="Board/CloseButtonContainer/CloseButton" to="." method="_on_close_button_pressed"]

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dimm0orse8irq"
+path="res://.godot/imported/Sword_Hit.wav-585d52183b6c5c1df0041616bf3debc9.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Chicken Chop Game Audio/Sword/Sword_Hit.wav"
+dest_files=["res://.godot/imported/Sword_Hit.wav-585d52183b6c5c1df0041616bf3debc9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

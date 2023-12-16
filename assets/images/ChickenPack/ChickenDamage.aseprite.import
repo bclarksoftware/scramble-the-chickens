@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://taccfmcilvwf"
+path="res://.godot/imported/ChickenDamage.aseprite-c74540c01c5cb473028cf139b3fc6016.res"
+
+[deps]
+
+source_file="res://assets/images/ChickenPack/ChickenDamage.aseprite"
+dest_files=["res://.godot/imported/ChickenDamage.aseprite-c74540c01c5cb473028cf139b3fc6016.res"]
+
+[params]
+

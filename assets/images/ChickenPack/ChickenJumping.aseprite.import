@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://ttmjydpcur6w"
+path="res://.godot/imported/ChickenJumping.aseprite-4041bf65dbd578c616ee3522ef06b972.res"
+
+[deps]
+
+source_file="res://assets/images/ChickenPack/ChickenJumping.aseprite"
+dest_files=["res://.godot/imported/ChickenJumping.aseprite-4041bf65dbd578c616ee3522ef06b972.res"]
+
+[params]
+

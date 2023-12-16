@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ciamb2q2paabf"
+path="res://.godot/imported/Health_Pickup.wav-4eb8805c40d57984fd8b8cd31e630450.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Chicken Chop Game Audio/Health/Health_Pickup.wav"
+dest_files=["res://.godot/imported/Health_Pickup.wav-4eb8805c40d57984fd8b8cd31e630450.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

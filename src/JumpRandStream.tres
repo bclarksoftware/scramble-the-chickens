@@ -1,0 +1,13 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://di8tof2p2fuqk"]
+
+[ext_resource type="AudioStream" uid="uid://fub74i53t0rm" path="res://assets/sounds/Chicken Chop Game Audio/Cat/Cute_Jump1.wav" id="1_yrdf8"]
+[ext_resource type="AudioStream" uid="uid://djhxxp2q1bicu" path="res://assets/sounds/Chicken Chop Game Audio/Cat/Cute_Jump2.wav" id="2_8xrbf"]
+
+[resource]
+streams_count = 2
+playback_mode = 2
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("1_yrdf8")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("2_8xrbf")
+stream_1/weight = 1.0
