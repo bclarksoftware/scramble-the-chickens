@@ -1,0 +1,7 @@
+Agenda:
+- Implement Github workflow automating build and protecting API Key - https://github.com/orgs/community/discussions/57070
+- Chicken pathfinding improvements
+- Add different types of chickens
+- Actually design a map
+- Make it round based
+- Add a shop
