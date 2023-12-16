@@ -3,8 +3,8 @@ extends Node
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	SilentWolf.configure({
-		"api_key": "IKa125N9Zz62SwPjO8JbW2zEF6an0EnhSLA2gtR6",
-		"game_id": "ScrambletheChickens",
+		"api_key": "API_KEY",
+		"game_id": "GAME_ID",
 		"log_level": 0
 	})
 
